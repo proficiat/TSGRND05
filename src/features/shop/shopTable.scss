@@ -1,0 +1,65 @@
+$mainTextColor: #25213c;
+$secondaryTextColor: #726d96;
+
+.order-status {
+  position: relative;
+  background: #e6e6f2;
+  color: #4b4aff;
+  border-radius: 16px;
+  width: fit-content;
+  padding: 0 24px;
+  text-transform: capitalize;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4b4aff;
+  }
+}
+
+%cell-text {
+  color: $mainTextColor;
+}
+
+.order-number {
+  @extend %cell-text;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.address {
+  @extend %cell-text;
+  line-height: 1.2;
+  font-size: 13px;
+}
+
+
+%cell-sub-text {
+  color: $secondaryTextColor;
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.order-date {
+  @extend %cell-sub-text;
+  letter-spacing: 1.2px;
+  font-size: 15px;
+}
+
+.status-date {
+  @extend %cell-sub-text;
+}
+
+.currency {
+  @extend %cell-sub-text;
+}
+
+
