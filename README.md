@@ -4,13 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * Clone project into an empty folder being in that folder:
 ```
-git clone https://github.com/proficiat/mri-online-exercise.git
+git clone https://github.com/proficiat/TSGRND05.git
 ```
 
 * Change to created directory after cloning (mri-online-exercise):
 
 ```
-cd mri-online-exercise
+cd TSGRND05
 ```
 
 * Install deps
